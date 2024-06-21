@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2272/2272425.png" type="image/x-icon">
+</head>
+<body>
+    <div id="block">
+        <h1 id="display"></h1>
+    </div>
+   <script>
+   setTimeout(() => {
+    document.getElementById("display").innerText = "10";
+    setTimeout(() => {
+      document.getElementById("display").innerText = "9";
+      setTimeout(() => {
+        document.getElementById("display").innerText = "8";
+        setTimeout(() => {
+          document.getElementById("display").innerText = "7";
+          setTimeout(() => {
+            document.getElementById("display").innerText = "6";
+            setTimeout(() => {
+              document.getElementById("display").innerText = "5";
+              setTimeout(() => {
+                document.getElementById("display").innerText = "4";
+                setTimeout(() => {
+                  document.getElementById("display").innerText = "3";
+                  setTimeout(() => {
+                    document.getElementById("display").innerText = "2";
+                    setTimeout(() => {
+                      document.getElementById("display").innerText = "1";
+                      setTimeout(() => {
+                        document.getElementById("display").innerText =
+                          "Happy Independence day";
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);</script>
+    
+</body>
+</html>
